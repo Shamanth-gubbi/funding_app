@@ -29,7 +29,7 @@ void main()
                 onPressed: () {
                   
                 },
-                child: Text('Back'),
+                child: Text(' Back '),
               
                style: ButtonStyle(
                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
