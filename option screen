@@ -1,0 +1,71 @@
+import 'package:flutter/material.dart';
+
+void main()
+{
+  runApp(
+
+     MaterialApp(
+      title: 'Congrats',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: Scaffold(
+        backgroundColor: Colors.blue.withOpacity(0.9),
+        
+       
+        body: Center(
+          
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'Are you',
+                style: TextStyle(color: Colors.white),
+                
+              ),
+              SizedBox(height: 20),
+              ElevatedButton(
+                
+                onPressed: () {
+                  
+                },
+                child: Text(
+                  '  A Student  ',
+                   style: TextStyle(color: Colors.white.withOpacity(0.85)),
+                  
+                ),
+               style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(
+                Colors.white.withOpacity(0.55),
+                 ),
+                ),
+                ),
+              SizedBox(height: 20),
+              Text(
+                'Or',
+                style: TextStyle(color: Colors.white),
+                
+              ),
+              SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {
+                  
+                },
+                child: Text(
+                  'A Sponsor',
+                   style: TextStyle(color: Colors.white.withOpacity(0.85)),
+                ),
+                 style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(
+                Colors.white.withOpacity(0.55),
+                 ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+     ),
+    );
+}
+
